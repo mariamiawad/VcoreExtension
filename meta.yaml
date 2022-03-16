@@ -1,4 +1,4 @@
-apiVersion: v3                                                 
+apiVersion: v1                                               
 publisher: valeo                                                
 name: vscoretoolingextension                                             
 version: 0.0.1                                                  
