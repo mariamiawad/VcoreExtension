@@ -1,8 +1,7 @@
 apiVersion: v2                                                   
 publisher: valeo                                                
 name: vscoretoolingextension                                             
-version: 0.0.1                                                  
-type: value                                                      
+version: 0.0.1                                                   
 displayName:                                                     
 title:                                                           
 description:                                                     
