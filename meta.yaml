@@ -6,15 +6,8 @@ type: VS Code extension
 displayName:                                                     
 title:                                                           
 description:                                                     
-icon: https://www.eclipse.org/che/images/logo-eclipseche.svg     
-repository:                                                     
-category:                                                       
-spec:
-  containers:                                                   
-    - image:                                                    
-      memoryLimit:                                              
-      memoryRequest:                                            
-      cpuLimit:                                                 
-      cpuRequest:                                               
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg                                                     
+category: Debugger                                          
+spec:                                      
   extensions:                                                   
           - https://github.com/mariamiawad/VcoreExtension/blob/main/vscoretoolingextension-0.0.1.vsix
