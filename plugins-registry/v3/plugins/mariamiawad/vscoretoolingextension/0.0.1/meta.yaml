@@ -3,7 +3,8 @@ publisher: valeo
 name: vscoretoolingextension                                             
 version: 0.0.1  
 type: VS Code extension
-displayName: vscoretoolingextension                                                   
+displayName: vscoretoolingextension 
+description: vscoretoolingextension
 title:                                                           
 description:                                                     
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg                                                     
