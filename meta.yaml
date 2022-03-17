@@ -2,7 +2,7 @@ apiVersion: v2
 publisher: valeo                                                
 name: vscoretoolingextension                                             
 version: 0.0.1  
-type: Theia plugin
+type: Visual Studio Code extension
 displayName:                                                     
 title:                                                           
 description:                                                     
