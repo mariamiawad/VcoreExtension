@@ -7,7 +7,7 @@ displayName:
 title:                                                           
 description:                                                     
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg                                                     
-category: Debugger                                          
+category: Other                                          
 spec:                                      
   extensions:                                                   
           - https://github.com/mariamiawad/VcoreExtension/blob/main/vscoretoolingextension-0.0.1.vsix
