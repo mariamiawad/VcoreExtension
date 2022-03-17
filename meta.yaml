@@ -2,7 +2,7 @@ apiVersion: v2
 publisher: valeo                                                
 name: vscoretoolingextension                                             
 version: 0.0.1  
-type: VSCode Extension
+type: VS Code extension
 displayName:                                                     
 title:                                                           
 description:                                                     
