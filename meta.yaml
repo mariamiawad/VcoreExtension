@@ -20,7 +20,7 @@ spec:
         type: ide
   containers:
    - name: code-server
-     image: "docker.io/chinodesuuu/coder:latest"
+     image: "docker.io/alexandreoda/vscode"
      mountSources: true
      ports:
          - exposedPort: 9000
