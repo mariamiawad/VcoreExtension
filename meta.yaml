@@ -29,4 +29,3 @@ spec:
           
         - mountPath: '/home/coder/.local/share/code-server'
           name: 'user-data'
-          ephemeral: true
