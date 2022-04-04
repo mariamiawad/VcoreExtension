@@ -20,7 +20,7 @@ spec:
         protocol: http
       public: true
   containers:
-    - image: 'wwkiyyx/vscode:codeserver'
+    - image: 'exadra37/visual-studio-code'
       mountSources: true
       memoryLimit: 1024M
       volumes:
