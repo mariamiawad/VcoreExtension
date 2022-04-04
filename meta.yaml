@@ -29,6 +29,5 @@ spec:
         - mountPath: '/projects'
           name: 'projects'
           ephemeral: true
-
         - mountPath: '/home/coder/.local/share/code-server'
           name: 'user-data'
