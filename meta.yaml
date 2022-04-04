@@ -20,7 +20,7 @@ spec:
         protocol: http
       public: true
   containers:
-    - image: 'visv/visualstudiocode'
+    - image: 'geircode/visualstudiocode'
       mountSources: true
       memoryLimit: 1024M
       volumes:
