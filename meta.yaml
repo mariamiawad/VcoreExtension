@@ -20,7 +20,7 @@ spec:
         protocol: http
       public: true
   containers:
-    - image: 'exadra37/visual-studio-code'
+    - image: 'visv/visualstudiocode'
       mountSources: true
       memoryLimit: 1024M
       volumes:
