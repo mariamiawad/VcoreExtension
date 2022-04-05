@@ -1,23 +1,22 @@
-apiVersion: v2
-publisher: linuxserver
-name: code-server
-version: latest
 type: Che Editor
 displayName: code-server
 title: Visual Studio Code - Web (code-server)
 description: An open source distribution of Visual Studio Code as cloud IDE
 icon: /images/default.png
 category: Editor
+repository: 'https://github.com/demyxsh/code-server'
+firstPublicationDate: '2022-15-01'
+latestUpdateDate: '2022-04-02'
 spec:  
   endpoints:
     - name: code-server
-      targetPort: 8443      
+      targetPort: 8080      
       attributes:
         type: ide
         protocol: http
       public: true
   containers:
-    - image: 'lscr.io/linuxserver/code-server'
+    - image: 'demyx/code-server'
       mountSources: true
       memoryLimit: 1024M
       volumes:
@@ -25,5 +24,5 @@ spec:
           mountPath: /home/coder/.local/share/code-server
       name: code-server
       ports:
-        - exposedPort: 8443
+        - exposedPort: 8080
   initContainers: []
