@@ -25,6 +25,8 @@ spec:
         - name: user-data
           mountPath: /home/coder/.local/share/code-server
       name: code-server
+      env:
+        PASSWORD='123'
       ports:
         - exposedPort: 8080
   initContainers: []
