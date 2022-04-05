@@ -23,7 +23,7 @@ spec:
       memoryLimit: 1024M
       volumes:
         - name: user-data
-          mountPath: 	/demyx
+          mountPath: /demyx
       name: code-server
       ports:
         - exposedPort: 8080
