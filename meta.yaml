@@ -11,13 +11,13 @@ category: Editor
 spec:  
   endpoints:
     - name: code-server
-      targetPort: 3000      
+      targetPort: 8443      
       attributes:
         type: ide
         protocol: http
       public: true
   containers:
-    - image: 'gitpod/openvscode-server'
+    - image: 'linuxserver/code-server'
       mountSources: true
       memoryLimit: 1024M
       volumes:
@@ -25,5 +25,5 @@ spec:
           mountPath: /home/coder/.local/share/code-server
       name: code-server
       ports:
-        - exposedPort: 3000
+        - exposedPort: 8443
   initContainers: []
