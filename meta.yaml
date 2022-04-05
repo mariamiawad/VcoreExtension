@@ -1,4 +1,5 @@
 type: Che Editor
+publisher: demyx
 displayName: code-server
 title: Visual Studio Code - Web (code-server)
 description: An open source distribution of Visual Studio Code as cloud IDE
