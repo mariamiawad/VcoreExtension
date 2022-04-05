@@ -1,5 +1,5 @@
 apiVersion: v2
-publisher: cdr
+publisher: gitpod
 name: code-server
 version: latest
 type: Che Editor
@@ -8,17 +8,17 @@ title: Visual Studio Code - Web (code-server)
 description: An open source distribution of Visual Studio Code as cloud IDE
 icon: /images/default.png
 category: Editor
-repository: 'https://github.com/linuxserver/docker-code-server'
+repository: 'https://github.com/coder/code-server'
 spec:  
   endpoints:
     - name: code-server
-      targetPort: 8443      
+      targetPort: 3000      
       attributes:
         type: ide
         protocol: http
       public: true
   containers:
-    - image: 'lscr.io/linuxserver/code-server'
+    - image: 'gitpod/openvscode-server'
       mountSources: true
       memoryLimit: 1024M
       volumes:
@@ -26,5 +26,5 @@ spec:
           mountPath: /home/coder/.local/share/code-server
       name: code-server
       ports:
-        - exposedPort: 8443
+        - exposedPort: 3000
   initContainers: []
