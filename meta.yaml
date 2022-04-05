@@ -9,8 +9,6 @@ description: An open source distribution of Visual Studio Code as cloud IDE
 icon: /images/default.png
 category: Editor
 repository: 'https://github.com/cdr/code-server'
-firstPublicationDate: '2020-11-03'
-latestUpdateDate: '2021-08-11'
 spec:  
   endpoints:
     - name: code-server
