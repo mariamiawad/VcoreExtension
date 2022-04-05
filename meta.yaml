@@ -1,5 +1,5 @@
 apiVersion: v2
-publisher: gitpod
+publisher: demyx
 name: code-server
 version: latest
 type: Che Editor
@@ -8,23 +8,23 @@ title: Visual Studio Code - Web (code-server)
 description: An open source distribution of Visual Studio Code as cloud IDE
 icon: /images/default.png
 category: Editor
-repository: 'https://github.com/coder/code-server'
+repository: 'https://github.com/demyxsh/code-server'
 spec:  
   endpoints:
     - name: code-server
-      targetPort: 3000      
+      targetPort: 8080      
       attributes:
         type: ide
         protocol: http
       public: true
   containers:
-    - image: 'gitpod/openvscode-server'
+    - image: 'demyx/docker-socket-proxy'
       mountSources: true
       memoryLimit: 1024M
       volumes:
         - name: user-data
-          mountPath: /home/coder/.local/share/code-server
+          mountPath: 	/demyx
       name: code-server
       ports:
-        - exposedPort: 3000
+        - exposedPort: 8080
   initContainers: []
