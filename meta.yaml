@@ -21,10 +21,12 @@ spec:
     - image: 'codercom/code-server:4.2.0'
       mountSources: true
       memoryLimit: 1024M
+      volumes:
+        - name: user-data
+          mountPath: /home/coder/.local/share/code-server
       name: code-server
       env:
         - value: '1234'
           name: PASSWORD
       ports:
         - exposedPort: 8080
-  initContainers: []
