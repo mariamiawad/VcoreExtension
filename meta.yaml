@@ -23,7 +23,7 @@ spec:
       memoryLimit: 4096M
       volumes:
         - name: user-data
-          mountPath: /home/coder/.local/share/code-server
+          mountPath: ~/
       name: code-server
       env:
         - value: '1234'
