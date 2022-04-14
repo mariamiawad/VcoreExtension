@@ -23,7 +23,7 @@ spec:
       memoryLimit: 4096M
       volumes:
         - name: user-data
-          mountPath: /
+          mountPath: /home
       name: code-server
       env:
         - value: '1234'
