@@ -20,7 +20,7 @@ spec:
   containers:
     - image: 'codercom/code-server:4.2.0'
       mountSources: true
-      memoryLimit: 1024M
+      memoryLimit: 4096M
       volumes:
         - name: user-data
           mountPath: /home/coder/.local/share/code-server
