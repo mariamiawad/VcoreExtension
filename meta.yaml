@@ -15,7 +15,7 @@ spec:
       targetPort: 8080      
       attributes:
         type: ide
-        protocol: https
+        protocol: http
       public: true
   containers:
     - image: 'codercom/code-server:4.2.0'
@@ -23,7 +23,7 @@ spec:
       memoryLimit: 4096M
       volumes:
         - name: user-data
-          mountPath: ~/
+          mountPath: /home/coder/.local/share/code-server
       name: code-server
       env:
         - value: '1234'
